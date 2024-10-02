@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '28734e3555694ac5b8a1de7f5ba58f9d';  
+const apiKey = process.env.REACT_APP_WEATHERBIT_API_KEY;  
 const BASE_URL = 'https://api.weatherbit.io/v2.0/marine/forecast';
 
 export const getSurfForecast = async (lat, lon) => {
